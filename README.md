@@ -65,19 +65,19 @@ config.server.qqpasswd=
 
 ### 准备
 
-    基于springboot构建完成，所以需要JDK1.8及以上版本，文下的jar文件均指编译打包后的jar包，若想自己编译可以使用maven工具构建。
+   -  基于springboot构建完成，所以需要JDK1.8及以上版本，文下的jar文件均指编译打包后的jar包，若想自己编译可以使用maven工具构建。
     然后将源码目录下src/main/resources/ 或者release压缩包目录下的application.properties放到跟jar包同一个目录下
     
 ### 运行
-    在控制台输入
+ -    在控制台输入
 ```shell
 java -jar valveqqrobot-0.0.1-SNAPSHOT.jar
 ```
-    对于windows机器，必须输入
+  -   对于windows机器，必须输入
 ```shell
 java -Dfile.encoding=utf-8 -jar valveqqrobot-0.0.1-SNAPSHOT.jar
 ```
     
-    第一次运行前必须将上文配置application.properties内的config.server.log配置项更改为all，否则控制台看不到验证url或者验
+   -  第一次运行前必须将上文配置application.properties内的config.server.log配置项更改为all，否则控制台看不到验证url或者验
     证码，如果需要输入验证码，直接在控制台输入然后回车即可，若需要扫描二维码， 将网址复制到浏览器使用手机扫描并确认然后返回控制台回车，登录第一次后会随机在同路径生成一个device.json设备描述文件，再登录几次后无需再使用二维码或者验证码登录，即可关
     闭log输出
