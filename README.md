@@ -23,45 +23,45 @@
 - **本软件禁止用于一切商业活动**
 - **本软件禁止收费传递, 或在传递时不提供源代码**
 
-###配置文件说明
-####服务器ip,以;隔开
+### 配置文件说明
+#### 服务器ip,以;隔开
 ```shell
 config.server.ip=127.0.0.1:27015;127.0.0.1:27016
 ```
-#####服务器密码,不要使用特殊字符,以;隔开,跟上面ip对应
+##### 服务器密码,不要使用特殊字符,以;隔开,跟上面ip对应
 ```shell
 config.server.password=aaa;bbb
 ```
-#####服务器名称,英文或数字，不要使用特殊字符，以;隔开，跟上面ip一一对应
+##### 服务器名称,英文或数字，不要使用特殊字符，以;隔开，跟上面ip一一对应
 ```shell
 config.server.name=server1;server2
 ```
-#####管理员qq号,数字,以;隔开
+##### 管理员qq号,数字,以;隔开
 ```shell
 config.server.qq=
 ```
-#####是否开启qq群白名单,false为不开启白名单，true为开启
+##### 是否开启qq群白名单,false为不开启白名单，true为开启
 ```shell
 config.server.groupflag=false
 ```
-#####qq群白名单，其他群都不会进行响应，以;隔开
+##### qq群白名单，其他群都不会进行响应，以;隔开
 ```shell
 config.server.group=
 ```
-###是否开启miraibot启动日志，值有 net,bot,all,no，net只打印网络日志,bot打印通讯日志，all打印所有，no关闭所有，建议第一次启动的时候开启，需要进行设备锁验证，后面没有问题的话可以填写no关闭所有日志
+### 是否开启miraibot启动日志，值有 net,bot,all,no，net只打印网络日志,bot打印通讯日志，all打印所有，no关闭所有，建议第一次启动的时候开启，需要进行设备锁验证，后面没有问题的话可以填写no关闭所有日志
 ```shell
 config.server.log=no
 ```
-#####登录的qq号
+##### 登录的qq号
 ```shell
 config.server.qqnumber=
 ```
-#####登录的qq密码
+##### 登录的qq密码
 ```shell
 config.server.qqpasswd=
 ```
 
-##使用方法
+## 使用方法
 
 ### 准备
 
