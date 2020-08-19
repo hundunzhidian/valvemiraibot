@@ -1,0 +1,4 @@
+logging:
+  level:
+    #这里可以是包名也可以是类名
+    cn.qaq.*: info
