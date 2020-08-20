@@ -81,3 +81,25 @@ java -Dfile.encoding=utf-8 -jar valveqqrobot-0.0.1-SNAPSHOT.jar
    -  第一次运行前必须将上文配置application.properties内的config.server.log配置项更改为all，否则控制台看不到验证url或者验
     证码，如果需要输入验证码，直接在控制台输入然后回车即可，若需要扫描二维码， 将网址复制到浏览器使用手机扫描并确认然后返回控制台回车，登录第一次后会随机在同路径生成一个device.json设备描述文件，再登录几次后无需再使用二维码或者验证码登录，即可关
     闭log输出
+### 查询命令
+- 查询服务器当前地图、名称、延迟等,若在配置文件列表则可以使用/server 别名，比如 ：
+```shell
+/server s1
+```
+   也可以使用/servers查询配置列表所有服务器信息，查询配置文件之外的服务器信息，使用 /connect ip，比如
+```shell
+/connect 127.0.0.1:27016
+```   
+- 查询服务器人数信息,使用players命令，别名查询输入
+```shell
+/players s1
+```
+  使用/players不加参数查询所有服务器人数，查询配置之外的服务器使用 /players ip，比如
+ ```shell
+/players 127.0.0.1:27016
+```    
+- rcon远程操作服务器，/exec 服务器别名 命令，比如
+ ```shell
+/exec s1 sm plugins list
+```   
+- /list查询当前配置列表所有服务器别名
