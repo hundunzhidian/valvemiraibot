@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.qaq</groupId>
     <artifactId>valveqqrobot</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.1.0.RELEASE</version>
     <name>valveqqrobot</name>
     <description>Demo project for Spring Boot</description>
 
@@ -15,6 +15,7 @@
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
         <springboot.version>2.1.4.RELEASE</springboot.version>
         <jackson.version>2.11.2</jackson.version>
+        <kotlin.version>1.4.32</kotlin.version>
     </properties>
     <repositories>
         <repository>
@@ -27,11 +28,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/net.mamoe/mirai-core-qqandroid -->
         <dependency>
             <groupId>net.mamoe</groupId>
-            <artifactId>mirai-core-qqandroid</artifactId>
-            <version>1.0.2</version>
+            <artifactId>mirai-core-all</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>net.mamoe</groupId>
+            <artifactId>mirai-core-jvm</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>${kotlin.version}</version>
         </dependency>
         <!-- 公共依赖 -->
         <dependency>

@@ -37,7 +37,7 @@ public class QQService {
         log.debug(ip);
         StringBuilder stringBuilder=new StringBuilder();
         try {
-            List<HashMap<String,String>> jsonArray= UdpServer.getPlayers(ip);
+            List<HashMap<String,Object>> jsonArray= UdpServer.getPlayers(ip);
             log.debug(objectMapper.writeValueAsString(jsonArray));
             stringBuilder.append("当前玩家:");
             stringBuilder.append(jsonArray.size());
@@ -46,7 +46,7 @@ public class QQService {
             {
                 stringBuilder.append(jsonArray.get(i).get("name"));
                 stringBuilder.append("     ");
-                int time=Integer.valueOf(jsonArray.get(i).get("time"));
+                int time=Integer.valueOf(String.valueOf(jsonArray.get(i).get("time")));
                 if(time>3600)
                 {
                     stringBuilder.append(time/3600);
@@ -79,7 +79,7 @@ public class QQService {
     public String getServerInfo(String ip)
     {
         log.debug(ip);
-        HashMap<String,String> jsonObject1=UdpServer.getServers(ip);
+        HashMap<String,Object> jsonObject1=UdpServer.getServers(ip);
         StringBuilder stringBuilder=new StringBuilder();
         stringBuilder.append("服务器名称: ");
         stringBuilder.append(jsonObject1.get("name"));
