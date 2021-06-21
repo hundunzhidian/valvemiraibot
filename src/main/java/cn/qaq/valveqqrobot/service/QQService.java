@@ -46,7 +46,7 @@ public class QQService {
             {
                 stringBuilder.append(jsonArray.get(i).get("name"));
                 stringBuilder.append("     ");
-                int time=Integer.valueOf(String.valueOf(jsonArray.get(i).get("time")));
+                Long time=Double.valueOf(String.valueOf(jsonArray.get(i).get("time"))).longValue();
                 if(time>3600)
                 {
                     stringBuilder.append(time/3600);
