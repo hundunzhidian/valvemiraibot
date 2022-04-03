@@ -2,6 +2,7 @@ package cn.qaq.valveqqrobot.service;
 
 import ch.qos.logback.core.joran.conditional.ElseAction;
 import cn.qaq.valveqqrobot.config.GlobalConfig;
+import cn.qaq.valveqqrobot.utils.ByteTools;
 import cn.qaq.valveqqrobot.utils.TcpTools;
 import cn.qaq.valveqqrobot.utils.UdpServer;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,7 +47,7 @@ public class QQService {
             {
                 stringBuilder.append(jsonArray.get(i).get("name"));
                 stringBuilder.append("     ");
-                Long time=Double.valueOf(String.valueOf(jsonArray.get(i).get("time"))).longValue();
+                Long time= ByteTools.getDouble(jsonArray.get(i).get("time")).longValue();
                 if(time>3600)
                 {
                     stringBuilder.append(time/3600);
