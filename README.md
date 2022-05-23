@@ -3,7 +3,7 @@
 
 ## 注意
 ### 由于腾讯管控力度增强，且mirai优化并不是太好，导致新号或者其他账号登录会提示 "前版本过低，请升级到QQ最新版本",Mirai解决办法是加入滑动验证啥的，比较麻烦
-### 解决办法，更换qq内核为 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) + 我的http接口 (https://github.com/hundunzhidian/qqrobota2srcon),接口配置完全一样
+### 解决办法，更换qq内核为 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) + 我的[http接口](https://github.com/hundunzhidian/qqrobota2srcon) ,接口配置完全一样
 
 ## 声明
 
